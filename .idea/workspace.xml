@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d995c94-19d1-4aa9-bf34-ed8bc69a4ced" name="Changes" comment="init movie backend" />
+    <list default="true" id="1d995c94-19d1-4aa9-bf34-ed8bc69a4ced" name="Changes" comment="init movie backend">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dreammovie/chaircategory/ChairCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dreammovie/chaircategory/ChairCategory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dreammovie/chaircategory/ChairCategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dreammovie/chaircategory/ChairCategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dreammovie/chaircategory/ChairCategoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dreammovie/chaircategory/ChairCategoryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dreammovie/chaircategory/ChairCategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dreammovie/chaircategory/ChairCategoryService.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

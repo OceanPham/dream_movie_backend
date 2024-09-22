@@ -1,6 +1,10 @@
 package com.dreammovie.chaircategory;
 import jakarta.persistence.*;
+import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
+
 import java.math.BigDecimal;
+import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "loai_ghes")
@@ -21,6 +25,18 @@ public class ChairCategory {
 
     @Column (nullable = false)
     private int seatCount;
+
+    // Timestamps for tracking creation, updates, and deletion
+    @CreationTimestamp
+    @Column(updatable = false)
+    private LocalDateTime createdAt;
+
+    @UpdateTimestamp
+    private LocalDateTime updatedAt;
+
+    @Column
+    private LocalDateTime deletedAt;  // This is used for soft delete
+
 
     // Constructors
     public ChairCategory(){
@@ -72,5 +88,25 @@ public class ChairCategory {
 
     public void setSeatCount(int seatCount) {
         this.seatCount = seatCount;
+    }
+
+    public LocalDateTime getCreatedAt() {
+        return createdAt;
+    }
+
+    public LocalDateTime getUpdatedAt() {
+        return updatedAt;
+    }
+
+    public void setUpdatedAt(LocalDateTime updatedAt) {
+        this.updatedAt = updatedAt;
+    }
+
+    public LocalDateTime getDeletedAt() {
+        return deletedAt;
+    }
+
+    public void setDeletedAt(LocalDateTime deletedAt) {
+        this.deletedAt = deletedAt;
     }
 }

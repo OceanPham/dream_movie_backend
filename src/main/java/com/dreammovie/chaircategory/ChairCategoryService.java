@@ -3,6 +3,7 @@ package com.dreammovie.chaircategory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;
 
@@ -13,8 +14,22 @@ public class ChairCategoryService {
     private ChairCategoryRepository chairCategoryRepository;
 
     // Lấy tất cả các loại ghế
-    public List<ChairCategory> getAllChairCategories(){
-        return chairCategoryRepository.findAll();
+//    public List<ChairCategory> getAllChairCategories(){
+//        return chairCategoryRepository.findAll();
+//    }
+
+    public List<ChairCategory> getAllActiveChairCategories() {
+        // Only return records that are not soft deleted (deletedAt is null)
+        return chairCategoryRepository.findByDeletedAtIsNull();
+    }
+
+    public void softDeleteChairCategory(Long id) {
+        ChairCategory chairCategory = chairCategoryRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("ChairCategory not found"));
+
+        // Set deletedAt to the current time to mark it as deleted
+        chairCategory.setDeletedAt(LocalDateTime.now());
+        chairCategoryRepository.save(chairCategory);
     }
 
     // Lấy loại ghế theo ID
