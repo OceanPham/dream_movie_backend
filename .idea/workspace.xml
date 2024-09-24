@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8efc2d19-2443-4247-a04a-c86ab6a1947a" name="Changes" comment="">
+    <list default="true" id="8efc2d19-2443-4247-a04a-c86ab6a1947a" name="Changes" comment="init movie backend">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dreammovie/cinema/Cinema.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dreammovie/cinema/CinemaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dreammovie/cinema/CinemaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dreammovie/cinema/CinemaService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dreammovie/room/Room.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dreammovie/room/RoomController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dreammovie/room/RoomRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dreammovie/room/RoomService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -15,11 +23,17 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 4
 }</component>
   <component name="ProjectId" id="2mVCBBSmZTZDJYUane3KYhXBRUG" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -33,13 +47,19 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Subjects/Nam_4/KTĐBCLPM/Bao_Cao/dream_movie_backend",
+    "last_opened_file_path": "D:/Subjects/Nam_4/KTĐBCLPM/Bao_Cao/dream_movie_backend/src/main/java/com/dreammovie/room",
     "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Subjects\Nam_4\KTĐBCLPM\Bao_Cao\dream_movie_backend\src\main\java\com\dreammovie\room" />
+      <recent name="D:\Subjects\Nam_4\KTĐBCLPM\Bao_Cao\dream_movie_backend\src\main\java\com\dreammovie" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -50,5 +70,20 @@
       <updated>1727152221316</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init movie backend" />
+    <option name="LAST_COMMIT_MESSAGE" value="init movie backend" />
   </component>
 </project>
