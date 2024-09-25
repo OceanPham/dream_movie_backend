@@ -37,8 +37,8 @@ public class FilmService {
     public Film updateFilm(BigInteger id, Film updateFilm) {
         return filmRepository.findById(id)
             .map(existingFilm -> {  // .map là 1 phương thức có sẵn của Optional, nó nhận vào 1 function và trả về 1 Optional mới, nếu Optional có value thì nó sẽ áp dụng function này và trả về 1 Optional mới, nếu Optional không có value thì nó sẽ trả về 1 Optional rỗng
-                existingFilm.setMatheloai(updateFilm.getMatheloai());
-                existingFilm.setManhacungcap(updateFilm.getManhacungcap());
+                existingFilm.setCategory(updateFilm.getCategory());
+                existingFilm.setSupplier(updateFilm.getSupplier());
                 existingFilm.setName(updateFilm.getName());
                 existingFilm.setThoiluong(updateFilm.getThoiluong());
                 existingFilm.setNgaycongchieu(updateFilm.getNgaycongchieu());

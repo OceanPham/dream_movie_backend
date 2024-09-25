@@ -1,19 +1,16 @@
 package com.dreammovie.films;
 
 import java.math.BigInteger;
+import java.sql.Time;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import com.dreammovie.supplier.Supplier;
+import com.dreammovie.category.Category;
 
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
-
+import jakarta.persistence.*;
 @Entity // Đánh dấu lớp này là một entity JPA(đối tượng cơ sở dữ liệu)
 @Table(name = "phims")
 public class Film {
@@ -22,17 +19,21 @@ public class Film {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private BigInteger id;
 
-    @Column (nullable = false)
-    private BigInteger matheloai;
+    // Foreign key to Category (TheLoai)
+    @ManyToOne // Lazy fetching for performance
+    @JoinColumn(name = "id_theloai", nullable = false)  // Define the foreign key column
+    private Category category;
 
-    @Column (nullable = false)
-    private BigInteger manhacungcap;
+    // Foreign key to Supplier (NhaCungCap)
+    @ManyToOne
+    @JoinColumn(name = "id_nhacungcap", nullable = false)
+    private Supplier supplier;
 
     @Column (nullable = false)
     private String name;
     
     @Column (nullable = false)
-    private double thoiluong;
+    private Time thoiluong;
 
     @Column (nullable = false)
     private LocalDate ngaycongchieu;
@@ -59,15 +60,14 @@ public class Film {
 
     @Column
     private LocalDateTime deletedAt;  // This is used for soft delete
-    
-    // Constructors
-    public Film(){
+
+    public Film() {
     }
 
-    public Film(BigInteger id, BigInteger matheloai, BigInteger manhacungcap, String name, double thoiluong, LocalDate ngaycongchieu, String trangthai, String mota, String duongdan, String hinhanh) {
+    public Film(BigInteger id, Category category, Supplier supplier, String name, Time thoiluong, LocalDate ngaycongchieu, String trangthai, String mota, String duongdan, String hinhanh, LocalDateTime createdAt, LocalDateTime updatedAt, LocalDateTime deletedAt ) {
         this.id = id;
-        this.matheloai = matheloai;
-        this.manhacungcap = manhacungcap;
+        this.category = category;
+        this.supplier = supplier;
         this.name = name;
         this.thoiluong = thoiluong;
         this.ngaycongchieu = ngaycongchieu;
@@ -75,9 +75,11 @@ public class Film {
         this.mota = mota;
         this.duongdan = duongdan;
         this.hinhanh = hinhanh;
+        this.createdAt = createdAt;
+        this.updatedAt = updatedAt;
+        this.deletedAt = deletedAt;
     }
-    
-    // Các phương thức getter và setter
+
 
     public BigInteger getId() {
         return id;
@@ -87,20 +89,20 @@ public class Film {
         this.id = id;
     }
 
-    public BigInteger getMatheloai() {
-        return matheloai;
+    public Category getCategory() {
+        return category;
     }
 
-    public void setMatheloai(BigInteger matheloai) {
-        this.matheloai = matheloai;
+    public void setCategory(Category category) {
+        this.category = category;
     }
 
-    public BigInteger getManhacungcap() {
-        return manhacungcap;
+    public Supplier getSupplier() {
+        return supplier;
     }
 
-    public void setManhacungcap(BigInteger manhacungcap) {
-        this.manhacungcap = manhacungcap;
+    public void setSupplier(Supplier supplier) {
+        this.supplier = supplier;
     }
 
     public String getName() {
@@ -111,11 +113,11 @@ public class Film {
         this.name = name;
     }
 
-    public double getThoiluong() {
+    public Time getThoiluong() {
         return thoiluong;
     }
 
-    public void setThoiluong(double thoiluong) {
+    public void setThoiluong(Time thoiluong) {
         this.thoiluong = thoiluong;
     }
 

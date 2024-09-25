@@ -5,7 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8efc2d19-2443-4247-a04a-c86ab6a1947a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dreammovie/category/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dreammovie/category/CategoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dreammovie/category/CategoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dreammovie/category/CategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dreammovie/supplier/Supplier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dreammovie/supplier/SupplierController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dreammovie/supplier/SupplierRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dreammovie/supplier/SupplierService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dreammovie/films/Film.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dreammovie/films/Film.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dreammovie/films/FilmController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dreammovie/films/FilmController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dreammovie/films/FilmService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dreammovie/films/FilmService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +32,9 @@
   &quot;associatedIndex&quot;: 4
 }</component>
   <component name="ProjectId" id="2mVCBBSmZTZDJYUane3KYhXBRUG" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -33,13 +48,19 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Subjects/Nam_4/KTĐBCLPM/Bao_Cao/dream_movie_backend",
+    "last_opened_file_path": "D:/Subjects/Nam_4/KTĐBCLPM/Bao_Cao/dream_movie_backend/src/main/java/com/dreammovie/supplier",
     "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Subjects\Nam_4\KTĐBCLPM\Bao_Cao\dream_movie_backend\src\main\java\com\dreammovie\supplier" />
+      <recent name="D:\Subjects\Nam_4\KTĐBCLPM\Bao_Cao\dream_movie_backend\src\main\java\com\dreammovie\category" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

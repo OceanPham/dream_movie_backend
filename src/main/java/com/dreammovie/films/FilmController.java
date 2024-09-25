@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController     // Đánh dấu lớp này là một RESTful web service, kết hợp @ResponseBody và @Controller, để xử lý các yêu cầu HTTP và trả về dữ liệu trực tiếp(JSON), giúp tạo ra các RESTful API
-@RequestMapping("/api/films")    // Định nghĩa đường dẫn cơ sở cho tất cả các endpoint trong controller này
+@RequestMapping("/api/phims")    // Định nghĩa đường dẫn cơ sở cho tất cả các endpoint trong controller này
 @CrossOrigin(origins = "http://localhost:3000")    // Cho phép các request từ frontend có cổng 3000 truy cập vào các endpoint trong controller này
 
 public class FilmController {
