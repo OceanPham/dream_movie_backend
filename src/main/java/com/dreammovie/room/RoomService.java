@@ -20,7 +20,7 @@ public class RoomService {
 
     public void softDeleteRoom(Long id) {
         Room room = roomRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Cinema not found"));
+                .orElseThrow(() -> new RuntimeException("Room not found"));
 
         // Set deletedAt to the current time to mark it as deleted
         room.setDeletedAt(LocalDateTime.now());
@@ -47,7 +47,6 @@ public class RoomService {
         }
         return null;
     }
-
 
     public void deleteRoom (Long id){
         roomRepository.deleteById(id);

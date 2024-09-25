@@ -4,16 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8efc2d19-2443-4247-a04a-c86ab6a1947a" name="Changes" comment="init movie backend">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dreammovie/cinema/Cinema.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dreammovie/cinema/CinemaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dreammovie/cinema/CinemaRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dreammovie/cinema/CinemaService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dreammovie/room/Room.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dreammovie/room/RoomController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dreammovie/room/RoomRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dreammovie/room/RoomService.java" afterDir="false" />
+    <list default="true" id="8efc2d19-2443-4247-a04a-c86ab6a1947a" name="Changes" comment="create package to resolve Cinema and Room">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dreammovie/language/Language.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dreammovie/language/LanguageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dreammovie/language/LanguageRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dreammovie/language/LanguageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dreammovie/screeningformat/ScreeningFormat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dreammovie/screeningformat/ScreeningFormatController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dreammovie/screeningformat/ScreeningFormatRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dreammovie/screeningformat/ScreeningFormatService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dreammovie/screeningtype/ScreeningType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dreammovie/screeningtype/ScreeningTypeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dreammovie/screeningtype/ScreeningTypeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dreammovie/screeningtype/ScreeningTypeService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dreammovie/room/RoomService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dreammovie/room/RoomService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +27,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/dreammovie/cinema/Cinema.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
@@ -47,7 +55,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Subjects/Nam_4/KTĐBCLPM/Bao_Cao/dream_movie_backend/src/main/java/com/dreammovie/room",
+    "last_opened_file_path": "D:/Subjects/Nam_4/KTĐBCLPM/Bao_Cao/dream_movie_backend/src/main/java/com/dreammovie/screeningtype",
     "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
@@ -56,6 +64,9 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Subjects\Nam_4\KTĐBCLPM\Bao_Cao\dream_movie_backend\src\main\java\com\dreammovie\screeningtype" />
+      <recent name="D:\Subjects\Nam_4\KTĐBCLPM\Bao_Cao\dream_movie_backend\src\main\java\com\dreammovie\language" />
+      <recent name="D:\Subjects\Nam_4\KTĐBCLPM\Bao_Cao\dream_movie_backend\src\main\java\com\dreammovie\ScreeningFormat" />
       <recent name="D:\Subjects\Nam_4\KTĐBCLPM\Bao_Cao\dream_movie_backend\src\main\java\com\dreammovie\room" />
       <recent name="D:\Subjects\Nam_4\KTĐBCLPM\Bao_Cao\dream_movie_backend\src\main\java\com\dreammovie" />
     </key>
@@ -69,6 +80,15 @@
       <option name="presentableId" value="Default" />
       <updated>1727152221316</updated>
     </task>
+    <task id="LOCAL-00001" summary="create package to resolve Cinema and Room">
+      <option name="closed" value="true" />
+      <created>1727196181723</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1727196181723</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -84,6 +104,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init movie backend" />
-    <option name="LAST_COMMIT_MESSAGE" value="init movie backend" />
+    <MESSAGE value="create package to resolve Cinema and Room" />
+    <option name="LAST_COMMIT_MESSAGE" value="create package to resolve Cinema and Room" />
   </component>
 </project>
