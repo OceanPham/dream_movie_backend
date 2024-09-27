@@ -23,6 +23,7 @@ public class NhanVien {
     @OneToMany(mappedBy = "nhanVien" , cascade =  CascadeType.ALL)
     private Set<Voucher> vouchers;
 
+    //update code
 //    @OneToMany(mappedBy = "nhanVien", cascade = CascadeType.ALL)
 //    private Set<Voucher> vouchers = new HashSet<>();
 
