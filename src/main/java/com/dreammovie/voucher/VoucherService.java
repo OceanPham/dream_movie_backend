@@ -13,9 +13,7 @@ public class VoucherService {
     @Autowired
     private VoucherRepository voucherRepository;
 
-
     public List<Voucher> getAllActiveVouchers() {
-        // Only return records that are not soft deleted (deletedAt is null)
         return voucherRepository.findByDeletedAtIsNull();
     }
 
@@ -23,27 +21,23 @@ public class VoucherService {
         Voucher voucher = voucherRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("Voucher not found"));
 
-        // Set deletedAt to the current time to mark it as deleted
         voucher.setDeletedAt(LocalDateTime.now());
         voucherRepository.save(voucher);
     }
 
-    // Lấy loại ghế theo ID
     public Optional<Voucher> getVoucherById (Long id){
         return voucherRepository.findById(id);
     }
 
-    // Thêm mới loại ghế
     public Voucher addVoucher(Voucher voucher){
         return voucherRepository.save(voucher);
     }
 
-    // Cập nhật loại ghế
     public Voucher updateVoucher (Long id, Voucher updateVoucher){
         Optional<Voucher> voucherOptional = voucherRepository.findById(id);
         if(voucherOptional.isPresent()){
             Voucher existingVoucher = voucherOptional.get();
-            existingVoucher.setNhanVien(updateVoucher.getNhanVien());
+            existingVoucher.setEmployee(updateVoucher.getEmployee());
             existingVoucher.setTi_le_chiet_khau(updateVoucher.getTi_le_chiet_khau());
             existingVoucher.setHan_muc(updateVoucher.getHan_muc());
             existingVoucher.setTinh_trang(updateVoucher.getTinh_trang());
@@ -54,7 +48,6 @@ public class VoucherService {
         }
         return null;
     }
-
 
     public void deleteVoucher (Long id){
         voucherRepository.deleteById(id);

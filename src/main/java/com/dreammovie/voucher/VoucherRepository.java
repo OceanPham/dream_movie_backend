@@ -7,7 +7,5 @@ import java.util.List;
 
 @Repository
 public interface VoucherRepository extends JpaRepository <Voucher, Long> {
-// JpaRepository đã cung cấp sẵn các thao tác CRUD.
     List<Voucher> findByDeletedAtIsNull();
-//    Page<ChairCategory> findAll(Pageable pageable);
 }

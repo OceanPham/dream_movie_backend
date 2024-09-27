@@ -1,8 +1,9 @@
 package com.dreammovie.voucher;
-import com.dreammovie.nhanvien.NhanVien;
+import com.dreammovie.employee.Employee;
 import jakarta.persistence.*;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties; // Import annotation
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
@@ -15,9 +16,14 @@ public class Voucher {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @ManyToOne(optional = false)
-    @JoinColumn(name = "nhanvien_id", nullable = false)
-    private NhanVien nhanVien;
+//    @ManyToOne
+//    @JoinColumn(name = "employee_id", nullable = false)
+//    private Employee employee;
+
+    @ManyToOne
+    @JoinColumn(name = "employee_id", nullable = false)
+    @JsonIgnoreProperties("vouchers") // Loại bỏ trường "vouchers" khi tuần tự hóa dữ liệu từ phía Voucher
+    private Employee employee;
 
     @Column (nullable = false)
     private BigDecimal ti_le_chiet_khau;
@@ -45,25 +51,20 @@ public class Voucher {
     @Column
     private LocalDateTime deletedAt;  // This is used for soft delete
 
-
     // Constructors
-
-
     public Voucher() {
     }
 
-    public Voucher(Long id, NhanVien nhanVien, BigDecimal ti_le_chiet_khau, BigDecimal han_muc, Boolean tinh_trang, LocalDateTime ngay_tao, LocalDateTime han_dung, LocalDateTime createdAt, LocalDateTime updatedAt, LocalDateTime deletedAt) {
+    public Voucher(Long id, Employee employee, BigDecimal ti_le_chiet_khau, BigDecimal han_muc, Boolean tinh_trang, LocalDateTime ngay_tao, LocalDateTime han_dung) {
         this.id = id;
-        this.han_dung = han_dung;
-        this.han_muc = han_muc;
-        this.ngay_tao = ngay_tao;
+        this.employee = employee;
         this.ti_le_chiet_khau = ti_le_chiet_khau;
+        this.han_muc = han_muc;
         this.tinh_trang = tinh_trang;
-        this.nhanVien = nhanVien;
-        this.createdAt = createdAt;
-        this.updatedAt = updatedAt;
-        this.deletedAt = deletedAt;
+        this.ngay_tao = ngay_tao;
+        this.han_dung = han_dung;
     }
+
 
     public Long getId() {
         return id;
@@ -73,12 +74,12 @@ public class Voucher {
         this.id = id;
     }
 
-    public NhanVien getNhanVien() {
-        return nhanVien;
+    public Employee getEmployee() {
+        return employee;
     }
 
-    public void setNhanVien(NhanVien nhanVien) {
-        this.nhanVien = nhanVien;
+    public void setEmployee(Employee employee) {
+        this.employee = employee;
     }
 
     public BigDecimal getTi_le_chiet_khau() {

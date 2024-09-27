@@ -9,6 +9,5 @@ import java.util.List;
 
 @Repository
 public interface RoomRepository extends JpaRepository <Room, Long> {
-    // JpaRepository đã cung cấp sẵn các thao tác CRUD.
     List<Room> findByDeletedAtIsNull();
 }

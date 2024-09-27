@@ -9,30 +9,29 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/vouchers")
-@CrossOrigin(origins = "http://localhost:3000") // Cho phép các request từ frontend
+@CrossOrigin(origins = "http://localhost:3000")
+
 public class VoucherController {
 
     @Autowired
     private VoucherService voucherService;
+
     @Autowired
     private VoucherRepository voucherRepository;
-    //Get all chair Category
+
     @GetMapping
     public List<Voucher> getAllVoucher(){
         return voucherService.getAllActiveVouchers();
     }
 
-    //Get chair category by id
     @GetMapping("/{id}")
     public ResponseEntity<Voucher> getVoucherById(@PathVariable Long id){
         Optional<Voucher> category = voucherService.getVoucherById(id);
         return category.map(ResponseEntity::ok).orElseGet(()->ResponseEntity.notFound().build());
     }
 
-    //Add new
     @PostMapping
     public Voucher addVoucher(@RequestBody Voucher voucher){
-
         return voucherService.addVoucher(voucher);
     }
 
