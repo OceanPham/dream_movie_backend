@@ -26,6 +26,9 @@ public class Voucher {
     private Employee employee;
 
     @Column (nullable = false)
+    private String name;
+
+    @Column (nullable = false)
     private BigDecimal ti_le_chiet_khau;
 
     @Column (nullable = false)
@@ -55,9 +58,10 @@ public class Voucher {
     public Voucher() {
     }
 
-    public Voucher(Long id, Employee employee, BigDecimal ti_le_chiet_khau, BigDecimal han_muc, Boolean tinh_trang, LocalDateTime ngay_tao, LocalDateTime han_dung) {
+    public Voucher(Long id, Employee employee,String name, BigDecimal ti_le_chiet_khau, BigDecimal han_muc, Boolean tinh_trang, LocalDateTime ngay_tao, LocalDateTime han_dung) {
         this.id = id;
         this.employee = employee;
+        this.name = name;
         this.ti_le_chiet_khau = ti_le_chiet_khau;
         this.han_muc = han_muc;
         this.tinh_trang = tinh_trang;
@@ -72,6 +76,14 @@ public class Voucher {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public Employee getEmployee() {

@@ -5,16 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0740100b-0122-45aa-9e7d-5e5b7448d724" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dreammovie/nhanvien/NhanVien.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dreammovie/employee/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dreammovie/nhanvien/NhanVienController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dreammovie/employee/EmployeeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dreammovie/nhanvien/NhanVienRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dreammovie/employee/EmployeeRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dreammovie/nhanvien/NhanVienService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dreammovie/employee/EmployeeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dreammovie/room/RoomRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dreammovie/room/RoomRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dreammovie/voucher/Voucher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dreammovie/voucher/Voucher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dreammovie/voucher/VoucherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dreammovie/voucher/VoucherController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dreammovie/voucher/VoucherRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dreammovie/voucher/VoucherRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dreammovie/voucher/VoucherService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dreammovie/voucher/VoucherService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
