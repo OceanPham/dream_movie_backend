@@ -4,31 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0740100b-0122-45aa-9e7d-5e5b7448d724" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dreammovie/role/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dreammovie/role/RoleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dreammovie/role/RoleRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dreammovie/role/RoleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dreammovie/user/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dreammovie/user/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dreammovie/user/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dreammovie/user/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="584c4888-b1e9-46a7-ba0b-f3bab5fe409a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dreammovie/showtime/ShowTime.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dreammovie/showtime/ShowTimeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dreammovie/showtime/ShowTimeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dreammovie/showtime/ShowTimeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dream_movie_backend" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dreammovie/films/Film.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dreammovie/films/Film.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dreammovie/voucher/Voucher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dreammovie/voucher/Voucher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
-  <component name="ProjectId" id="2mhbHZ9ldqdic0ZHO9D70r4LnsH" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2mhtJ7ftHLtDGH5r5iKjK0N3e3a" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -38,35 +44,25 @@
     <option name="showMembers" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Subjects/Nam_4/KTĐBCLPM/Bao_Cao/dream_movie_backend/src/main/java/com/dreammovie/user",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Subjects\Nam_4\KTĐBCLPM\Bao_Cao\dream_movie_backend\src\main\java\com\dreammovie\user" />
-      <recent name="D:\Subjects\Nam_4\KTĐBCLPM\Bao_Cao\dream_movie_backend\src\main\java\com\dreammovie\role" />
-    </key>
-  </component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="0740100b-0122-45aa-9e7d-5e5b7448d724" name="Changes" comment="" />
-      <created>1727531669461</created>
+      <changelist id="584c4888-b1e9-46a7-ba0b-f3bab5fe409a" name="Changes" comment="" />
+      <created>1727540562228</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1727531669461</updated>
+      <updated>1727540562228</updated>
     </task>
     <servers />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <ignored-roots>
-      <path value="$PROJECT_DIR$/dream_movie_backend" />
-    </ignored-roots>
   </component>
 </project>

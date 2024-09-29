@@ -16,10 +16,6 @@ public class Voucher {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-//    @ManyToOne
-//    @JoinColumn(name = "employee_id", nullable = false)
-//    private Employee employee;
-
     @ManyToOne
     @JoinColumn(name = "employee_id", nullable = false)
     @JsonIgnoreProperties("vouchers") // Loại bỏ trường "vouchers" khi tuần tự hóa dữ liệu từ phía Voucher

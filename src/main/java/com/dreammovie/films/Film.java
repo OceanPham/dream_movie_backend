@@ -17,7 +17,7 @@ public class Film {
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private BigInteger id;
+    private Long id;
 
     // Foreign key to Category (TheLoai)
     @ManyToOne // Lazy fetching for performance
@@ -64,7 +64,7 @@ public class Film {
     public Film() {
     }
 
-    public Film(BigInteger id, Category category, Supplier supplier, String name, Time thoiluong, LocalDate ngaycongchieu, String trangthai, String mota, String duongdan, String hinhanh, LocalDateTime createdAt, LocalDateTime updatedAt, LocalDateTime deletedAt ) {
+    public Film(Long id, Category category, Supplier supplier, String name, Time thoiluong, LocalDate ngaycongchieu, String trangthai, String mota, String duongdan, String hinhanh, LocalDateTime createdAt, LocalDateTime updatedAt, LocalDateTime deletedAt ) {
         this.id = id;
         this.category = category;
         this.supplier = supplier;
@@ -81,11 +81,11 @@ public class Film {
     }
 
 
-    public BigInteger getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(BigInteger id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
