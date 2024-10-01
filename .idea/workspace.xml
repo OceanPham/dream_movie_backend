@@ -5,15 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="584c4888-b1e9-46a7-ba0b-f3bab5fe409a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dreammovie/showtime/ShowTime.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dreammovie/showtime/ShowTimeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dreammovie/showtime/ShowTimeRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dreammovie/showtime/ShowTimeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dreammovie/films/Film.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dreammovie/films/Film.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dreammovie/voucher/Voucher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dreammovie/voucher/Voucher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
