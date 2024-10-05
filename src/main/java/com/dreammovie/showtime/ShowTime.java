@@ -54,7 +54,7 @@ public class ShowTime {
     private String status;
 
     @ManyToOne
-    @JoinColumn(name = "voucher_id", nullable = false)
+    @JoinColumn(name = "voucher_id", nullable = true)
     private Voucher voucher;
 
     @CreationTimestamp
