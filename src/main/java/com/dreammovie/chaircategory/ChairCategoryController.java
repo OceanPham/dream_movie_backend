@@ -53,7 +53,7 @@ public class ChairCategoryController {
     //Delete
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteChairCategory(@PathVariable Long id){
-        chairCategoryService.deleteChairCategory(id);
+        chairCategoryService.softDeleteChairCategory(id);
         return ResponseEntity.ok().build();
     }
 
