@@ -80,6 +80,9 @@ public class Film {
         this.deletedAt = deletedAt;
     }
 
+    public Film(long l, String exampleFilmTitle, String exampleDescription, int i, String directorName, LocalDate of) {
+    }
+
 
     public Long getId() {
         return id;

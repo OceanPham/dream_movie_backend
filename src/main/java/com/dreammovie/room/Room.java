@@ -49,6 +49,9 @@ public class Room {
     public Room() {
     }
 
+    public Room(long l, String s, int i, Cinema cinema) {
+    }
+
     public Long getId() {
         return id;
     }

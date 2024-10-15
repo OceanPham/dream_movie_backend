@@ -45,6 +45,9 @@ public class ScreeningFormat {
         this.status = status;
     }
 
+    public ScreeningFormat(long l, String imax, String s) {
+    }
+
     public Long getId() {
         return id;
     }

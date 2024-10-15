@@ -51,6 +51,9 @@ public class Cinema {
         this.phone = phone;
     }
 
+    public Cinema(long l, String exampleCinema, String s, String exampleCity, String number, String mail) {
+    }
+
     public Long getId() {
         return id;
     }

@@ -76,7 +76,6 @@ class ChairCategoryServiceTest {
 
         // Gọi phương thức softDeleteChairCategory
         chairCategoryService.softDeleteChairCategory(1L);
-
         // Kiểm tra repository đã gọi đúng phương thức save để cập nhật trạng thái soft delete
         verify(chairCategoryRepository, times(1)).save(any(ChairCategory.class));
     }
@@ -89,7 +88,6 @@ class ChairCategoryServiceTest {
         newCategory.setDescription("Loại ghế cao cấp");
         newCategory.setPrice(new BigDecimal("200000"));
         newCategory.setSeatCount(50);
-
         // Giả lập hành vi của repository
         when(chairCategoryRepository.save(any(ChairCategory.class))).thenReturn(newCategory);
 

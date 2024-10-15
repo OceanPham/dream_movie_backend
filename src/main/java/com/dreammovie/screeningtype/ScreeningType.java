@@ -45,6 +45,9 @@ public class ScreeningType {
         this.status = status;
     }
 
+    public ScreeningType(long l, String s, String s1) {
+    }
+
     public Long getId() {
         return id;
     }

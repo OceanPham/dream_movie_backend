@@ -44,6 +44,9 @@ public class Language {
         this.status = status;
     }
 
+    public Language(long l, String english, String en) {
+    }
+
     public Long getId() {
         return id;
     }
